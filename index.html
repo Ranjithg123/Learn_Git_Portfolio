@@ -1,13 +1,10 @@
-
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Portfolio | Home</title>
 </head>
 <body>
     <main class="page">
@@ -15,13 +12,22 @@
         <div class="dot-grid dot-grid-left" aria-hidden="true"></div>
         <div class="dot-grid dot-grid-right" aria-hidden="true"></div>
 
+        <nav class="top-nav">
+            <a href="index.html" class="nav-link active">#home</a>
+            <a href="about.html" class="nav-link">#about</a>
+            <a href="projects.html" class="nav-link">#projects</a>
+            <a href="services.html" class="nav-link">#services</a>
+            <a href="experience.html" class="nav-link">#experience</a>
+            <a href="contact.html" class="nav-link">#contact</a>
+        </nav>
+
         <header class="title-block">
             <h1>Portfolio</h1>
             <div class="title-row">
-                <p class="role">Front-end developer</p>
+                <p class="role">System Administrator</p>
                 <div class="discord-handle">
                     <img src="https://www.figma.com/api/mcp/asset/bc66faab-a454-4f0c-aac1-d3f538585d95" alt="Discord">
-                    <span>!Elias#3519</span>
+                    <span>!o</span>
                 </div>
             </div>
         </header>
@@ -34,6 +40,45 @@
                 class="hero-image"
             >
         </section>
+
+        <section class="content-card">
+            <h2 class="section-title">#what-i-do</h2>
+            <p class="content-text">
+                I build and manage secure Linux server environments, automate deployments, and keep production systems
+                stable and fast.
+            </p>
+            <div class="chip-wrap">
+                <span class="chip">VPS Setup</span>
+                <span class="chip">Nginx</span>
+                <span class="chip">Docker</span>
+                <span class="chip">CI/CD</span>
+                <span class="chip">Monitoring</span>
+                <span class="chip">Backups</span>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2 class="section-subtitle">#quick-highlights</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>99.9% uptime target</h3>
+                    <p>Production checklists, alerts, and rollback-ready deployment flow.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Security first</h3>
+                    <p>Firewall rules, hardening baselines, SSL automation, and audit-friendly configs.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Cost optimized</h3>
+                    <p>Resource planning and tuned services to reduce server waste without sacrificing speed.</p>
+                </article>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <p>Built with a Figma-inspired style system.</p>
+            <a href="projects.html" class="text-link">Explore all projects</a>
+        </footer>
     </main>
 </body>
 </html>
