@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
+
+:root {
+    --bg: #282c33;
+    --primary: #c778dd;
+    --text: #ffffff;
+    --muted: #abb2bf;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Fira Code", "Consolas", monospace;
+    min-height: 100vh;
+}
+
+.page {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    padding: 2.5rem 1.25rem 4rem;
+}
+
+.title-block {
+    position: relative;
+    z-index: 2;
+    max-width: 48.3125rem;
+    margin: 0 auto 2.8rem;
+    text-align: center;
+}
+
+.title-block h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.9rem, 3vw, 4rem);
+    margin-top: 1.35rem;
+    flex-wrap: wrap;
+}
+
+.role {
+    margin: 0;
+    color: var(--primary);
+    font-size: clamp(1.2rem, 3.4vw, 2.25rem);
+}
+
+.discord-handle {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--muted);
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.discord-handle img {
+    width: clamp(1rem, 2vw, 1.4rem);
+    height: clamp(1rem, 2vw, 1.4rem);
+}
+
+.hero-frame {
+    position: relative;
+    z-index: 2;
+    max-width: 76.5rem;
+    margin: 0 auto;
+    border: 2px solid var(--primary);
+    background: var(--bg);
+}
+
+.domain-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--primary);
+    background: var(--bg);
+    color: var(--text);
+    font-size: clamp(1.55rem, 4.2vw, 3rem);
+    line-height: 1;
+    padding: 0.65em 0.55em;
+    white-space: nowrap;
+    z-index: 3;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.dot-grid {
+    position: absolute;
+    z-index: 1;
+    --dot: #abb2bf;
+    --step: 1.8rem;
+    width: 14rem;
+    height: 14rem;
+    background-image: radial-gradient(circle, var(--dot) 2px, transparent 2px);
+    background-size: var(--step) var(--step);
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.dot-grid-small {
+    width: 7rem;
+    height: 7rem;
+    --step: 1.4rem;
+}
+
+.dot-top-left {
+    top: 3.2rem;
+    left: 2.5rem;
+}
+
+.dot-grid-left {
+    left: -3.5rem;
+    bottom: 6rem;
+}
+
+.dot-grid-right {
+    right: 1.2rem;
+    top: 40%;
+}
+
+@media (max-width: 900px) {
+    .page {
+        padding-top: 2rem;
+    }
+
+    .title-block {
+        margin-bottom: 2rem;
+    }
+
+    .hero-frame {
+        margin-top: 0.75rem;
+    }
+
+    .dot-grid-right {
+        right: -2.5rem;
+        top: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+    .domain-badge {
+        padding: 0.5em 0.45em;
+        font-size: clamp(1rem, 6vw, 1.6rem);
+    }
+
+    .dot-grid-left,
+    .dot-grid-right {
+        width: 8rem;
+        height: 8rem;
+        --step: 1.3rem;
+    }
+
+    .dot-grid-left {
+        left: -2.75rem;
+        bottom: 2rem;
+    }
+
+    .dot-grid-right {
+        right: -2.5rem;
+        top: 58%;
+    }
+}

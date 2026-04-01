@@ -1,0 +1,1 @@
+This is a repo where I learned GitHub and tried to build a portfolio site
